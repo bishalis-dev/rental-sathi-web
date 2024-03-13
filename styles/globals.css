@@ -1,3 +1,54 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+/* custom css */
+.site_logo{
+    width: auto;
+    height: 60px!important;
+    display: block;
+}
+.hero-section{
+    padding: 7rem 0;
+}
+.section-wrapper{
+    padding: 4rem 0;
+}
+.section-title{
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}
+.card-title{
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+.card{
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    padding: 2rem;
+    text-align: center;
+}
+.icons-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.icons {
+    font-size: 2rem;
+    margin-right: 1rem;
+    background-color: red;
+    padding: 1rem;
+}
+.bg-1{
+    background-color: #f3f4f6;
+}
+.bg-2{
+    background-color: #f3f4f6;
+}
+.bg-3{
+    background-color: #f3f4f6;
+}

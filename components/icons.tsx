@@ -1,26 +1,17 @@
 import * as React from "react";
 import { IconSvgProps } from "@/types";
-
+import Image from "next/image";
 export const Logo: React.FC<IconSvgProps> = ({
 	size = 36,
 	width,
 	height,
 	...props
 }) => (
-	<svg
-		fill="none"
-		height={size || height}
-		viewBox="0 0 32 32"
-		width={size || width}
-		{...props}
-	>
-		<path
-			clipRule="evenodd"
-			d="M17.6482 10.1305L15.8785 7.02583L7.02979 22.5499H10.5278L17.6482 10.1305ZM19.8798 14.0457L18.11 17.1983L19.394 19.4511H16.8453L15.1056 22.5499H24.7272L19.8798 14.0457Z"
-			fill="currentColor"
-			fillRule="evenodd"
-		/>
-	</svg>
+	<img
+		alt="Rental Sathi Logo"
+		src="/Rental-logo.jpg"
+		className="flex-shrink-0 site_logo"
+	/>
 );
 
 export const DiscordIcon: React.FC<IconSvgProps> = ({
@@ -64,7 +55,26 @@ export const TwitterIcon: React.FC<IconSvgProps> = ({
 		</svg>
 	);
 };
-
+export const ExploreIcon: React.FC<IconSvgProps> = ({
+	size = 24,
+	width,
+	height,
+	...props
+}) => {
+	return (
+		<svg
+			height={size || height}
+			viewBox="0 0 24 24"
+			width={size || width}
+			{...props}
+		>
+			<path
+				d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zm0 18c-4.418 0-8-3.582-8-8s3.582-8 8-8 8 3.582 8 8-3.582 8-8 8zm-1-9h2v6h-2v-6zm0-2h2v2h-2V9z"
+				fill="currentColor"
+			/>
+		</svg>
+	);
+};
 export const GithubIcon: React.FC<IconSvgProps> = ({
 	size = 24,
 	width,
