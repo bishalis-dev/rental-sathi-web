@@ -5,7 +5,7 @@ import Link from "next/link";
 export default function RegisterPage() {
 	return (
 		<>
-		<section className="flex bg-red-50 flex-col items-center justify-center gap-4 hero-section">
+		<section className="flex bg-red-50 flex-col items-center justify-center hero-section">
 			<div className="inline-block px-2 text-center justify-center">
 				<h1 className={title()}>Renting Vehicle made&nbsp;</h1>
 				<h1 className={title({ color: "violet" })}>easy&nbsp;</h1>
@@ -13,9 +13,11 @@ export default function RegisterPage() {
 				<h1 className={title()}>
 					with Rental Sathi <span className="text-primary">.</span>
 				</h1>
+				<br />
 				<h2 className="text-2xl mt-4">
 					Register today as a user or a vehicle owner to get started
 				</h2>
+				<br />
 			</div>
 			<div className="flex gap-4">
 				<Link href={siteConfig.links.registerAsOwner} className="bg-primary text-white px-4 py-2 rounded-full">Register as Owner</Link>
