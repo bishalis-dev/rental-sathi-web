@@ -1,9 +1,11 @@
 import Link from "next/link";
 // import { useRef } from "react";
 import { useForm } from "react-hook-form";
-export default function BookingsForm({ vehicle, handleSelection }) {
-  const {register, handleSubmit} = useForm();
-  const onSubmit = (data) => {
+
+export default function BookingsForm({ vehicle, handleSelection }: any) {
+  const { register, handleSubmit } = useForm();
+
+  const onSubmit = (data: any) => {
     console.log(data);
   };
   // const formRef = useRef();
@@ -30,12 +32,14 @@ export default function BookingsForm({ vehicle, handleSelection }) {
                 <h1 className="text-xl font-bold leading-tight tracking-tight text-gray-900 md:text-2xl dark:text-white">
                   Provide Details to Confirm Booking
                 </h1>
-                <form className="space-y-4 md:space-y-6" id="bookingData" onSubmit={handleSubmit(onSubmit)}>
+                <form
+                  className="space-y-4 md:space-y-6"
+                  id="bookingData"
+                  onSubmit={handleSubmit(onSubmit)}>
                   <div>
                     <label
                       htmlFor="pickupdate"
-                      className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
-                    >
+                      className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">
                       Pickup Date:
                     </label>
                     <input
@@ -50,8 +54,7 @@ export default function BookingsForm({ vehicle, handleSelection }) {
                   <div>
                     <label
                       htmlFor="location"
-                      className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
-                    >
+                      className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">
                       Where are you going?
                     </label>
                     <input
@@ -66,8 +69,7 @@ export default function BookingsForm({ vehicle, handleSelection }) {
                   <div>
                     <label
                       htmlFor="dropdate"
-                      className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
-                    >
+                      className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">
                       Drop Date:
                     </label>
                     <input
@@ -82,8 +84,7 @@ export default function BookingsForm({ vehicle, handleSelection }) {
                   <div>
                     <label
                       htmlFor="license"
-                      className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
-                    >
+                      className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">
                       License Number:
                     </label>
                     <input
@@ -98,8 +99,7 @@ export default function BookingsForm({ vehicle, handleSelection }) {
                   <div>
                     <label
                       htmlFor="citizenship"
-                      className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
-                    >
+                      className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">
                       Citizenship Number:
                     </label>
                     <input
@@ -116,19 +116,19 @@ export default function BookingsForm({ vehicle, handleSelection }) {
                     type="submit"
                     className="w-full text-white bg-primary-600 hover:bg-primary-700 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800"
                     // onClick={() =>
-                      // function () {
-                        // console.log("Form Data", formRef.current);
-                        // var formObjectData = Object.fromEntries(
-                        //   new FormData(document.getElementById("bookingsData")
-                        // );
-                        // handleSelection(
-                        //   {
-                        //     vehicleType: vehicle.vehicleType,
-                        //     vehicleId: vehicle.vehicleId,
-                        //   },
-                        //   3
-                        // );
-                      // }
+                    // function () {
+                    // console.log("Form Data", formRef.current);
+                    // var formObjectData = Object.fromEntries(
+                    //   new FormData(document.getElementById("bookingsData")
+                    // );
+                    // handleSelection(
+                    //   {
+                    //     vehicleType: vehicle.vehicleType,
+                    //     vehicleId: vehicle.vehicleId,
+                    //   },
+                    //   3
+                    // );
+                    // }
                     // }
                   >
                     Create Bookings

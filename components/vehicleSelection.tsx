@@ -1,4 +1,7 @@
-export default function VehicleSelection({ handleSelection, vehicleType }) {
+export default function VehicleSelection({
+  handleSelection,
+  vehicleType,
+}: any) {
   return (
     <>
       <div className="w-full">
@@ -35,10 +38,15 @@ export default function VehicleSelection({ handleSelection, vehicleType }) {
             <h2 className="item-title">Estimated Price </h2>
             <h2 className="item-title">₹ 10,000 / day</h2>
             <button
-              onClick={() => handleSelection({
-                vehicleType: vehicleType,
-                vehicleId: 100001,
-              }, 3)}
+              onClick={() =>
+                handleSelection(
+                  {
+                    vehicleType: vehicleType,
+                    vehicleId: 100001,
+                  },
+                  3
+                )
+              }
               className="bg-violet-300 text-white px-3 py-2 rounded-lg">
               Book Now
             </button>
