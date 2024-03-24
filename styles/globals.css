@@ -2,7 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
-
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 /* custom css */
 .site_logo{
     width: auto;
@@ -51,4 +55,18 @@
 }
 .bg-3{
     background-color: #f3f4f6;
+}
+.selection-right-side{
+    width: 74%;
+}
+.selection-left-side{
+    width: 24%;
+}
+.item-title{
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 0.4rem;
+}
+.booking-title{
+    font-size: 0.94rem;
 }

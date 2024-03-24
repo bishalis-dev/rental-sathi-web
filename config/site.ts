@@ -1,8 +1,8 @@
 export type SiteConfig = typeof siteConfig;
 
 export const siteConfig = {
-  name: "Next.js + NextUI",
-  description: "Make beautiful websites regardless of your design experience.",
+  name: "Rental Sathi - A Web Based Vehicle Rental System",
+  description: "Rental Sathi is a web based vehicle rental system that allows users to rent vehicles from vehicle owners.",
   navMenuItems: [
     {
       label: "Home",
